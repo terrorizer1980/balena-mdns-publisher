@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - balena-sdk > lodash:
+        patched: '2022-03-26T05:50:42.663Z'
+    - balena-sdk > balena-device-status > lodash:
+        patched: '2022-03-26T05:50:42.663Z'
+    - balena-sdk > balena-semver > lodash:
+        patched: '2022-03-26T05:50:42.663Z'
+    - balena-sdk > balena-pine > lodash:
+        patched: '2022-03-26T05:50:42.663Z'
+    - balena-sdk > balena-settings-client > lodash:
+        patched: '2022-03-26T05:50:42.663Z'
+    - request-promise > request-promise-core > lodash:
+        patched: '2022-03-26T05:50:42.663Z'
+    - balena-sdk > balena-hup-action-utils > balena-semver > lodash:
+        patched: '2022-03-26T05:50:42.663Z'
