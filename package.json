@@ -4,7 +4,9 @@
     "build": "tsc",
     "prettify": "balena-lint --typescript --fix src/ typings/",
     "lint": "balena-lint --typescript src/ typings/ && tsc --noEmit",
-    "start": "node build/app.js"
+    "start": "node build/app.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Heds Simons <heds@balena.io>",
   "repository": {
@@ -24,9 +26,10 @@
     "balena-sdk": "^12.33.0",
     "bluebird": "^3.7.2",
     "dbus-native": "^0.4.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.20",
     "request": "^2.88.2",
-    "request-promise": "^4.2.6"
+    "request-promise": "^4.2.6",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@balena/lint": "^5.1.0",
@@ -50,5 +53,6 @@
   },
   "versionist": {
     "publishedAt": "2021-10-14T16:19:49.633Z"
-  }
+  },
+  "snyk": true
 }
